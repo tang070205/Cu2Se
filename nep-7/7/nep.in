@@ -10,4 +10,4 @@ lambda_f      1.0     # default
 lambda_v      0.2     # default
 batch         1000    # default
 population    50      # default
-generation    250000  # default
+generation    10000  # default
