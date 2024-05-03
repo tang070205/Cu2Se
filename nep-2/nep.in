@@ -1,0 +1,13 @@
+type          2 Cu Se
+version       4       # default
+cutoff        7 4     # default
+n_max         4 4     # default
+basis_size    12 12   # default
+l_max         4 2 0   # default
+neuron        30      # default
+lambda_e      1.0     # default
+lambda_f      1.0     # default
+lambda_v      0.2     # default
+batch         1000    # default
+population    50      # default
+generation    150000  # default
