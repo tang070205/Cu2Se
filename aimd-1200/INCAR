@@ -1,0 +1,31 @@
+# basic parameters 
+SYSTEM       = nvt
+#NCORE        = 8           # 48cores=8*6
+ENCUT        = 500         # cutoff energy for the PWB set 
+PREC         = Normal      # precision-mode 
+ISTART       = 0           # read the WAVECAR file or not (ICHARG=2) 
+LWAVE        = .FALSE.     # write WAVECAR or not 
+LCHARG       = .FALSE.     # write CHGCAR or not 
+
+# Electronic Relaxation    
+ISMEAR       = 0           # for alloy, (1,2)=Methfessel-Paxton order N, (bulk) 
+SIGMA        = 0.1         # for alloy, width of the smearing in eV, (bulk) 
+EDIFF        = 1e-5        # global break for electronic SC-loop, eV 
+LREAL        = Auto        # projection operators, "Auto" is ok
+NELM         = 150         # maximum number of electronic SC
+NELMIN       = 5           # avoid breaking after 2 steps  
+
+# Molecular Dynamics 
+IBRION       = 0           # Activate MD 
+MDALGO       = 2           # 2=Nose-Hoover, 3=Langevin 
+ISIF         = 2           # 1=NVE, 2=NVT, 3=NpT 
+ALGO         = Fast        # IALGO=48 (RMM-DIIS)
+ISYM         = 0           # no symmetry for MD, completely
+TEBEG        = 1200         # Begin temperature K 
+TEEND        = 1200         # Final temperature K 
+NSW          = 2500        # Max ionic steps 
+POTIM        = 4           # Timestep in fs 
+SMASS        = 0           # fictitious mass (in amu) to lattice degrees-of-freedom 
+NWRITE       = 1           # long MD-runs use NWRITE=0 or 1 
+NBLOCK       = 1           # write PCF and DOS, scale kinetic energy, also the output interval of XDATCAR    
+
